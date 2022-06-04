@@ -1,0 +1,38 @@
+{
+    "manifest_version": 3,
+    "icons": {
+        "128": "imgs/icon.jpg"
+    },
+    "description": "Azure DevOps Comparison Plugin",
+    "action": {
+        "default_icon": "imgs/popup.png",
+        "default_popup": "popup.html",
+        "default_title": "compare with specific commit when reviewing pull requests"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "http://*/*",
+                "https://*/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_end"
+        }
+    ],
+    "permissions": [
+        "tabs",
+        "storage",
+        "notifications",
+        "alarms"
+    ],
+    "host_permissions": [
+        "<all_urls>"
+    ],
+    "content_security_policy": {
+        "extension_pages": "script-src 'self'; object-src 'self'"
+    },
+    "name": "Azure DevOps Comparison Plugin",
+    "version": "1.0.0"
+}
