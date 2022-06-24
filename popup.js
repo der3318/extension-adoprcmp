@@ -18,7 +18,7 @@ function updateCommitId() {
 
 function startTimer() {
     updateCommitId();
-	setInterval(updateCommitId, configUpdateTime);
+    setInterval(updateCommitId, configUpdateTime);
 }
 
 var configUpdateTime = 5000;

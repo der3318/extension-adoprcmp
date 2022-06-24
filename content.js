@@ -78,9 +78,9 @@ function renderDiffLinks()
 function startTimer() {
     syncCommitId();
     // rerun every 5s because page contents may change dynamically
-	setInterval(renderDiffLinks, configUpdateTime);
+    setInterval(renderDiffLinks, pageUpdateTime);
 }
 
 var commitId = "4d9f05e9a9ae93304c4b0f78fe0657876a2510f9";
-var configUpdateTime = 5000;
+var pageUpdateTime = 5000;
 window.onload = startTimer;
