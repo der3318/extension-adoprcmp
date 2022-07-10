@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "icons": {
-        "128": "imgs/icon.png"
+        "512": "imgs/icon.png"
     },
     "description": "Azure DevOps Comparison Plugin",
     "action": {

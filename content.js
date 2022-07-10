@@ -29,9 +29,9 @@ function tryGetCurrentBranchName() {
 
 function shouldRenderDiffLinkBesidesViewButton(element) {
     if (element.childNodes.length > 0 && element.childNodes[0].textContent === "View") {
-        return true;	// view button is the first element inside the section
+        return true;    // view button is the first element inside the section
     }
-    return false;		// view button not found, or diff link already added
+    return false;       // view button not found, or diff link already added
 }
 
 function renderDiffLink(element, currentBranchName) {
@@ -46,7 +46,7 @@ function renderDiffLink(element, currentBranchName) {
     
     // append link HTML to the head of section
     let html = `
-        <a	class="flex-end bolt-button bolt-link-button enabled bolt-focus-treatment
+        <a  class="flex-end bolt-button bolt-link-button enabled bolt-focus-treatment
             data-focuszone="
             data-is-focusable="true"
             href="${href}"
